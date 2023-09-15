@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs') %>
+</head>
+<body>
+  <div>
+    <a href="/add">Add Contact</a>
+    <h1>Contacts</h1>
+    <hr>
+    <% contacts.forEach((contact, index) => { %>
+      <p><%= contact.fName %> <%= contact.lName %></p>
+      <a href="/edit/<%= index %>">Edit</a>
+      <a href="/view/<%= index %>">View</a>
+      <a href="/delete/<%= index %>">DELETE</a>
+      <hr>
+    <% }) %>
+  </div>
+</body>
+<%- include('./partials/footer.ejs') %>

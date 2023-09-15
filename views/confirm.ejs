@@ -1,0 +1,11 @@
+<%- include('./partials/header.ejs') %>
+</head>
+<body>
+  <form action="/confirm">
+    <label for="check">are you sure you want to delete user "<%= contacts[id].fName %>"</label>
+    <input type="checkbox" id="check" name="confirm">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+<%- include('./partials/footer.ejs') %>
+

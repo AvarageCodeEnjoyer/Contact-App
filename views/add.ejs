@@ -1,0 +1,37 @@
+<%- include('./partials/header') %> 
+
+<form action="/formInput" method="POST" enctype="multipart/form-data" required>
+  <div class="formGroup">
+    <label for="fName">First Name:</label>
+    <input type="text" name="fName" id="fName" placeholder="First Name" required>
+  </div>
+  <div class="formGroup">
+    <label for="lName">Last Name:</label>
+    <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+  </div>
+  <div class="formGroup">
+    <label for="Email">Email:</label>
+    <input type="text" name="Email"  id="Email" placeholder="Email" required>
+  </div>
+  <div class="formGroup">
+    <label for="Age">Age:</label>
+    <input type="number" name="Age" id="Age" placeholder="Age" required>
+  </div>
+  <div class="formGroup">
+    <label for="Hobbies">Hobbies:</label>
+    <input type="text" name="Hobbies" id="Hobbies" placeholder="Hobbies separated by commas" required>
+  </div>
+  <div class="formGroup">
+    <label for="Skills">Skills:</label>
+    <input type="text" name="Skills" id="Skills" placeholder="Skills separated by commas" required>
+  </div>
+  <div class="formGroup">
+    <label for="Photo">Photo:</label>
+    <input type="file" name="Photo" id="Photo" placeholder="Skills separated by commas" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+
+
+<%- include('./partials/footer') %>
