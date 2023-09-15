@@ -51,7 +51,7 @@ app.post('/add', async (req, res) => {
     const contacts = await readContactsFile()
     contacts.push(newContact)
     await writeContactsFile(contacts)
-    res.redirect('/')
+    res.render('index', { contacts })
   }
   catch (error) {
     console.error(error)
